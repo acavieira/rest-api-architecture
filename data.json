@@ -233,10 +233,5 @@
     "id": 11,
     "name": "Ana Maria",
     "email": "ana.maria@test.com"
-  },
-  {
-    "id": 12,
-    "name": "Tomas",
-    "email": "tomas@test.com"
   }
 ]

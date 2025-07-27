@@ -8,6 +8,9 @@ const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const app = express();
 const winston = require('winston');
+const swaggerUi = require('swagger-ui-express');
+const YAML = require('yamljs');
+const swaggerDocument = YAML.load('./swagger.yaml');
 
 // Logger configuration
 const logger = winston.createLogger({
@@ -53,6 +56,10 @@ logger.info(`Starting server on port ${port} [${process.env.NODE_ENV}]`);
 app.listen(port, () => {
     logger.info(`Server is running on port ${port} [${process.env.NODE_ENV}]`);
 });
+
+// Swagger documentation
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 
 module.exports = app;
 
