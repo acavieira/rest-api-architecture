@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const productsController = require('../controllers/productsController');
+const authenticateToken = require('../middleware/authMiddleware');
 
 // GET all products
 router.get('/', productsController.getAllProducts);
@@ -8,13 +9,13 @@ router.get('/', productsController.getAllProducts);
 // GET product by ID
 router.get('/:id', productsController.getProductById);
 
-// POST new product
-router.post('/', productsController.createProduct);
+// POST new product (protected)
+router.post('/', authenticateToken, productsController.createProduct);
 
-// PUT update product by ID
-router.put('/:id', productsController.updateProduct);
+// PUT update product by ID (protected)
+router.put('/:id', authenticateToken, productsController.updateProduct);
 
-// DELETE product by ID
-router.delete('/:id', productsController.deleteProduct);
+// DELETE product by ID (protected)
+router.delete('/:id', authenticateToken, productsController.deleteProduct);
 
 module.exports = router;

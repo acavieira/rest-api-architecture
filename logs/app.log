@@ -19,3 +19,11 @@
 {"level":"info","message":"productsRouter loaded","timestamp":"2025-07-28 14:31:49"}
 {"level":"info","message":"Starting server on port 3000 [development]","timestamp":"2025-07-28 14:31:49"}
 {"level":"info","message":"Server is running on port 3000 [development]","timestamp":"2025-07-28 14:31:49"}
+{"level":"info","message":"clientsRouter loaded","timestamp":"2025-07-28 17:55:47"}
+{"level":"info","message":"productsRouter loaded","timestamp":"2025-07-28 17:55:47"}
+{"level":"info","message":"Starting server on port 3000 [development]","timestamp":"2025-07-28 17:55:48"}
+{"level":"info","message":"Server is running on port 3000 [development]","timestamp":"2025-07-28 17:55:48"}
+{"level":"info","message":"clientsRouter loaded","timestamp":"2025-07-28 18:00:27"}
+{"level":"info","message":"productsRouter loaded","timestamp":"2025-07-28 18:00:27"}
+{"level":"info","message":"Starting server on port 3000 [development]","timestamp":"2025-07-28 18:00:27"}
+{"level":"info","message":"Server is running on port 3000 [development]","timestamp":"2025-07-28 18:00:27"}

@@ -49,6 +49,9 @@ const productsRouter = require('./routes/products');
 logger.info('productsRouter loaded');
 app.use('/api/v1/products', productsRouter);
 
+//-- auth
+const authRouter = require('./routes/auth');
+app.use('/api/v1', authRouter);
 
 // Health check endpoint
 app.get('/api/v1/health', (req, res) => {

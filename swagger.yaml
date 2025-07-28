@@ -6,11 +6,51 @@ info:
 servers:
   - url: http://localhost:3000/api/v1
 tags:
+  - name: Auth
+    description: Authentication endpoints
   - name: Clients
     description: Operações relacionadas a clientes
   - name: Products
     description: Operações relacionadas a produtos
 paths:
+  /login:
+    post:
+      tags: [Auth]
+      summary: Login to obtain JWT token
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  example: admin
+                password:
+                  type: string
+                  example: password123
+      responses:
+        '200':
+          description: JWT token returned
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        '401':
+          description: Invalid credentials
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: Invalid credentials.
   /clients:
     get:
       tags: [Clients]

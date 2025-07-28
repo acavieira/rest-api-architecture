@@ -170,6 +170,46 @@ rest-api-architecture/
   DELETE http://localhost:3000/api/v1/products/1
   ```
 
+## Authentication (JWT Token)
+
+This API uses JWT (JSON Web Token) authentication to protect sensitive endpoints (create, update, delete for clients and products).
+
+### How it works
+- To obtain a token, send a POST request to `/api/v1/login` with:
+  ```json
+  {
+    "username": "admin",
+    "password": "password123"
+  }
+  ```
+- The response will be:
+  ```json
+  { "token": "YOUR_JWT_TOKEN_HERE" }
+  ```
+- For all protected endpoints (POST, PUT, DELETE), you must include the token in the `Authorization` header:
+  ```
+  Authorization: Bearer YOUR_JWT_TOKEN_HERE
+  ```
+- In Postman, use the "Authorization" tab, select "Bearer Token" and paste your token.
+
+### Example (using Postman)
+1. **Login:**
+   - POST to `http://localhost:3000/api/v1/login` with body:
+     ```json
+     {
+       "username": "admin",
+       "password": "password123"
+     }
+     ```
+   - Copy the `token` from the response.
+2. **Access protected route:**
+   - For example, to create a product:
+     - POST to `http://localhost:3000/api/v1/products`
+     - In the "Authorization" tab, select "Bearer Token" and paste the token.
+     - Send the request as usual.
+
+If you try to access a protected route without a valid token, you will receive a `401 Unauthorized` or `403 Forbidden` error.
+
 ## Good RESTful Practices
 
 - Use plural nouns for resources (`/clients`, `/products`)
