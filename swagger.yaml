@@ -1,18 +1,25 @@
 openapi: 3.0.0
 info:
-  title: REST API Architecture Example
+  title: REST API Architecture 
   version: 1.0.0
-  description: Example API with clients resource
+  description: Example API with clients and products resources - by Ana Vieira
 servers:
   - url: http://localhost:3000/api/v1
+tags:
+  - name: Clients
+    description: Operações relacionadas a clientes
+  - name: Products
+    description: Operações relacionadas a produtos
 paths:
   /clients:
     get:
+      tags: [Clients]
       summary: Get all clients
       responses:
         '200':
           description: A list of clients
     post:
+      tags: [Clients]
       summary: Create a new client
       requestBody:
         required: true
@@ -30,6 +37,7 @@ paths:
           description: Client created
   /clients/{id}:
     get:
+      tags: [Clients]
       summary: Get client by ID
       parameters:
         - in: path
@@ -43,6 +51,7 @@ paths:
         '404':
           description: Client not found
     put:
+      tags: [Clients]
       summary: Update client by ID
       parameters:
         - in: path
@@ -67,6 +76,7 @@ paths:
         '404':
           description: Client not found
     delete:
+      tags: [Clients]
       summary: Delete client by ID
       parameters:
         - in: path
@@ -79,3 +89,81 @@ paths:
           description: Client deleted
         '404':
           description: Client not found
+  /products:
+    get:
+      tags: [Products]
+      summary: Get all products
+      responses:
+        '200':
+          description: A list of products
+    post:
+      tags: [Products]
+      summary: Create a new product
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                price:
+                  type: number
+      responses:
+        '201':
+          description: Product created
+  /products/{id}:
+    get:
+      tags: [Products]
+      summary: Get product by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Product found
+        '404':
+          description: Product not found
+    put:
+      tags: [Products]
+      summary: Update product by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                price:
+                  type: number
+      responses:
+        '200':
+          description: Product updated
+        '404':
+          description: Product not found
+    delete:
+      tags: [Products]
+      summary: Delete product by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Product deleted
+        '404':
+          description: Product not found

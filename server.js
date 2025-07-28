@@ -14,6 +14,10 @@ const swaggerDocument = YAML.load('./swagger.yaml');
 
 // Logger configuration
 const logger = winston.createLogger({
+    format: winston.format.combine(
+        winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+        winston.format.json()
+    ),
     transports: [
         new winston.transports.File({ filename: 'logs/app.log' }),
         new winston.transports.Console() // Log also to the terminal
@@ -35,9 +39,16 @@ const limiter = rateLimit({
 app.use(limiter);
 
 // Import routes
+// -- clients
 const clientsRouter = require('./routes/clients');
 logger.info('clientsRouter loaded');
 app.use('/api/v1/clients', clientsRouter);
+
+//-- products
+const productsRouter = require('./routes/products');
+logger.info('productsRouter loaded');
+app.use('/api/v1/products', productsRouter);
+
 
 // Health check endpoint
 app.get('/api/v1/health', (req, res) => {

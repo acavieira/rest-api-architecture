@@ -1,8 +1,8 @@
 const fs = require('fs');
-let data = require('../data.json');
+let data = require('../clients.json');
 const apiBase = '/api/v1';
 
-const saveData = () => fs.writeFileSync('./data.json', JSON.stringify(data, null, 2));
+const saveData = () => fs.writeFileSync('./clients.json', JSON.stringify(data, null, 2));
 
 // Controller functions
 exports.getAllClients = (req, res) => {

@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Notebook Dell Inspiron 15",
+    "price": 3500
+  },
+  {
+    "id": 2,
+    "name": "Mouse Logitech M720",
+    "price": 150
+  },
+  {
+    "id": 3,
+    "name": "Monitor LG 24MP59G",
+    "price": 900
+  },
+  {
+    "id": 4,
+    "name": "Teclado Mecânico Redragon Kumara",
+    "price": 250
+  },
+  {
+    "id": 5,
+    "name": "Headset HyperX Cloud Stinger",
+    "price": 320
+  },
+  {
+    "id": 6,
+    "name": "Smartphone Samsung Galaxy S21",
+    "price": 4200
+  },
+  {
+    "id": 7,
+    "name": "Tablet Apple iPad 9ª Geração",
+    "price": 3800
+  },
+  {
+    "id": 8,
+    "name": "Impressora HP DeskJet Ink Advantage 2774",
+    "price": 500
+  },
+  {
+    "id": 9,
+    "name": "Cadeira Gamer ThunderX3",
+    "price": 1200
+  },
+  {
+    "id": 10,
+    "name": "Webcam Logitech C920",
+    "price": 400
+  },
+  {
+    "id": 11,
+    "name": "SSD Kingston A400 480GB",
+    "price": 250
+  },
+  {
+    "id": 12,
+    "name": "Placa de Vídeo NVIDIA RTX 3060",
+    "price": 2500
+  },
+  {
+    "id": 13,
+    "name": "Fonte Corsair 650W 80 Plus Bronze",
+    "price": 450
+  },
+  {
+    "id": 14,
+    "name": "Gabinete NZXT H510",
+    "price": 600
+  },
+  {
+    "id": 15,
+    "name": "Processador AMD Ryzen 5 5600X",
+    "price": 1100
+  },
+  {
+    "id": 16,
+    "name": "Memória RAM Corsair Vengeance 16GB",
+    "price": 350
+  },
+  {
+    "id": 17,
+    "name": "HD Seagate 2TB",
+    "price": 350
+  },
+  {
+    "id": 18,
+    "name": "Roteador TP-Link Archer C6",
+    "price": 220
+  },
+  {
+    "id": 19,
+    "name": "Monitor Samsung Odyssey 27",
+    "price": 1800
+  },
+  {
+    "id": 20,
+    "name": "Microfone Fifine K669B",
+    "price": 180
+  },
+  {
+    "id": 21,
+    "name": "Teste Produto Ana",
+    "price": 100000
+  }
+]

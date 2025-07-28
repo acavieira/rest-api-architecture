@@ -1,23 +1,12 @@
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"clientsRouter loaded"}
-{"level":"info","message":"Starting server on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
-{"level":"info","message":"clientsRouter loaded"}
-{"level":"info","message":"Starting server on port 3000 [development]"}
-{"level":"info","message":"Server is running on port 3000 [development]"}
+{"level":"info","message":"clientsRouter loaded","timestamp":"2025-07-28 11:30:52"}
+{"level":"info","message":"productsRouter loaded","timestamp":"2025-07-28 11:30:52"}
+{"level":"info","message":"Starting server on port 3000 [development]","timestamp":"2025-07-28 11:30:52"}
+{"level":"info","message":"Server is running on port 3000 [development]","timestamp":"2025-07-28 11:30:52"}
+{"level":"info","message":"clientsRouter loaded","timestamp":"2025-07-28 11:34:13"}
+{"level":"info","message":"productsRouter loaded","timestamp":"2025-07-28 11:34:13"}
+{"level":"info","message":"Starting server on port 3000 [development]","timestamp":"2025-07-28 11:34:13"}
+{"level":"info","message":"Server is running on port 3000 [development]","timestamp":"2025-07-28 11:34:13"}
+{"level":"info","message":"clientsRouter loaded","timestamp":"2025-07-28 11:34:49"}
+{"level":"info","message":"productsRouter loaded","timestamp":"2025-07-28 11:34:49"}
+{"level":"info","message":"Starting server on port 3000 [development]","timestamp":"2025-07-28 11:34:49"}
+{"level":"info","message":"Server is running on port 3000 [development]","timestamp":"2025-07-28 11:34:49"}
