@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "jest"
+    "test": "npx jest"
   },
   "devDependencies": {
     "jest": "^30.0.5"
