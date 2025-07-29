@@ -19,5 +19,9 @@
     "swagger-ui-express": "^5.0.1",
     "winston": "^3.17.0",
     "yamljs": "^0.3.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
   }
 }

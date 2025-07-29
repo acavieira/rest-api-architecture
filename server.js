@@ -67,7 +67,7 @@ app.use((err, req, res, next) => {
 // Start server
 const port = process.env.PORT || 3000;
 logger.info(`Starting server on port ${port} [${process.env.NODE_ENV}]`);
-app.listen(port, () => {
+const server = app.listen(port, () => {
     logger.info(`Server is running on port ${port} [${process.env.NODE_ENV}]`);
 });
 
@@ -75,5 +75,5 @@ app.listen(port, () => {
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
-module.exports = app;
+module.exports = { app, server };
 
